@@ -128,11 +128,14 @@ Length is 3, cpcty 12, address still 3.
 Ans 5.
 
 5 Empty the array and add just one item arr.push("tauhida");
+Done, returns undefined. Because of how we define class Memory.
 
 6 Print this one item that you just added. What is the result? Can you explain your result?
+Above.
+
 
 7 What is the purpose of the _resize() function in your Array class?
 
-
+The '_' designates 'private' methods should only be used in scope (inside the class they are defined in.)
 
 */
