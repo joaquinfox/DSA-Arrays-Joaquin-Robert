@@ -1,6 +1,7 @@
 'use strict';
-import memory from './memory';
-class Array {
+const mem = require('./memory');
+const memory = new mem();
+class MyArray {
   constructor() {
     this.length = 0;
     this._capacity = 0;
@@ -65,4 +66,17 @@ class Array {
     this.length--;
   }
 }
-Array.SIZE_RATIO = 3;
+MyArray.SIZE_RATIO = 3;
+
+function Main() {
+  let arr = new MyArray();
+  // arr.push(30);
+  // arr.push(1);
+  // arr.push(2);
+  // arr.pop(1);
+  // arr.remove(0);
+  arr.get(1);
+  console.log(arr);
+}
+
+Main();
